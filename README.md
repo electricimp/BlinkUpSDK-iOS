@@ -12,11 +12,11 @@ This repo contains the Electric Imp BlinkUp™ SDK for iOS as it is made availab
 
 ## BlinkUp SDK Documentation ##
 
-To learn how to use the BlinkUp SDK in your app, please see [the SDK documentation]](./docs/index.html) (HTML).
+To learn how to use the BlinkUp SDK in your app, please see [the SDK documentation](./docs/index.html) (HTML).
 
 ## Release Notes and Known Issues ##
 
-Please see the [Dev Center SDK page](https://developer.electricimp.com/manufacturing/sdkdocs), or the [SDK documentation in this repo](./sdk/Documentation/html).
+Please see the [Dev Center SDK page](https://developer.electricimp.com/manufacturing/sdkdocs), or the [SDK documentation in this repo](./docs/index.html).
 
 ## Pull Requests ##
 
