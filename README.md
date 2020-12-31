@@ -1,8 +1,30 @@
 # The Electric Imp BlinkUp SDK for iOS #
 
-This repo contains the Electric Imp BlinkUp™ SDK for iOS as it is made available to Electric Imp customers. It mirrors the downloadable files hosted by the [Dev Center](https://developer.electricimp.com/manufacturing/sdkdocs), but in a form that allows developers to add the SDK to their app project repos as a sub-module. This will allow them to pull in SDK changes manually at build time, or automatically through their own build scripts.
+This repo contains the Electric Imp BlinkUp™ SDK for iOS as it is made available to Electric Imp customers. It mirrors the downloadable files hosted by the [Dev Center](https://developer.electricimp.com/manufacturing/sdkdocs), but in a form that allows developers to add the SDK to their iOS app projects as a Swift Package.
+
+**Note** The SDK was previously made available as a Git sub-module. This mode is now deprecated and will shortly be removed. We strongly recommend customers add the SDK to their iOS app projects using Xcode’s Swift Package Manager as outlined below.
+
+## Swift Package Installation ##
+
+1. Open your project in Xcode.
+1. Go to **File > Swift Packages > Add Package Dependency...** and add this repo as a dependency.
+1. Apply your preferred dependency rules.
+
+## BlinkUp SDK Documentation ##
+
+To learn how to use the BlinkUp SDK in your app, please see [the SDK documentation]](./docs/index.html) (HTML).
+
+## Release Notes and Known Issues ##
+
+Please see the [Dev Center SDK page](https://developer.electricimp.com/manufacturing/sdkdocs), or the [SDK documentation in this repo](./sdk/Documentation/html).
+
+## Pull Requests ##
+
+The BlinkUp SDK repo is considered solely for consumption by a customer’s project. We will not be accepting pull requests made to this repo. If you have support or related questions concerning the SDK, please submit them through your customer account’s [Electric Imp Support access](https://support.electricimp.com/).
 
 ## Sub-module Installation ##
+
+**Important** This mode is deprecated and will shortly be removed.
 
 To install the SDK as a sub-module, navigate to your project repo directory and then enter the following command:
 
@@ -21,20 +43,6 @@ To update the sub-module contents at any time, eg. in a build script, call:
 ```
 git submodule update --remote
 ```
-
-## BlinkUp SDK Installation ##
-
-To learn how to add the BlinkUp SDK files to your app project, please see the relevant documentation included with each of the SDK:
-
-- [iOS SDK Installation](./sdk/Documentation/html/index.html) (HTML)
-
-## Release Notes and Known Issues ##
-
-Please see the [Dev Center SDK page](https://developer.electricimp.com/manufacturing/sdkdocs), or the [SDK documentation in this repo](./sdk/Documentation/html).
-
-## Pull Requests ##
-
-The BlinkUp SDK repo is considered solely for consumption by a customer’s project. We will not be accepting pull requests made to this repo. If you have support or related questions concerning the SDK, please submit them through your customer account’s [Electric Imp Support access](https://support.electricimp.com/).
 
 ---
 
