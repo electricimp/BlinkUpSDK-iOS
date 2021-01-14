@@ -9,6 +9,13 @@ This repo contains the Electric Imp BlinkUp™ SDK for iOS as it is made availab
 1. Open your project in Xcode.
 1. Go to **File > Swift Packages > Add Package Dependency...** and add this repo as a dependency.
 1. Apply your preferred dependency rules.
+1. Ensure that your targets `Build Settings` has `-ObjC` set for `Other Linker Flags`
+
+## Moving to Swift Package Manager from a manual install or sub-module ##
+
+1. If you have previously had the SDK installed via sub-module, you can remove the sub-module reference in your git repository.
+1. The `BlinkUp.embeddedframework` can be deleted from your Xcode Project.
+1. If you wish, you can remove your targets `Build Settings` for the `Framework Search Paths` that references the old framework.
 
 ## BlinkUp SDK Documentation ##
 
