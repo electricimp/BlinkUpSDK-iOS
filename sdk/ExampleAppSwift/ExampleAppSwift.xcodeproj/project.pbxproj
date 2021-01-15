@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,13 +12,12 @@
 		C86E81B81AEEAE7D006FA979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86E81B61AEEAE7D006FA979 /* Main.storyboard */; };
 		C86E81BA1AEEAE7D006FA979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86E81B91AEEAE7D006FA979 /* Images.xcassets */; };
 		C86E81BD1AEEAE7D006FA979 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86E81BB1AEEAE7D006FA979 /* LaunchScreen.xib */; };
-		C86E81D61AEEAED7006FA979 /* BlinkUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86E81D31AEEAED7006FA979 /* BlinkUp.framework */; };
-		C86E81D71AEEAED7006FA979 /* BlinkUp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C86E81D51AEEAED7006FA979 /* BlinkUp.bundle */; };
 		C8A708BF1AEFE4ED005E4334 /* BUBasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BA1AEFE4ED005E4334 /* BUBasicController.swift */; };
 		C8A708C01AEFE4ED005E4334 /* BUConfigId.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BB1AEFE4ED005E4334 /* BUConfigId.swift */; };
 		C8A708C11AEFE4ED005E4334 /* BUDevicePoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BC1AEFE4ED005E4334 /* BUDevicePoller.swift */; };
 		C8A708C21AEFE4ED005E4334 /* BUFlashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BD1AEFE4ED005E4334 /* BUFlashController.swift */; };
 		C8A708C31AEFE4ED005E4334 /* BUNetworkSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BE1AEFE4ED005E4334 /* BUNetworkSelectController.swift */; };
+		C8C073ED25B0E949007B114A /* BlinkUp in Frameworks */ = {isa = PBXBuildFile; productRef = C8C073EC25B0E949007B114A /* BlinkUp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +28,6 @@
 		C86E81B71AEEAE7D006FA979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C86E81B91AEEAE7D006FA979 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C86E81BC1AEEAE7D006FA979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C86E81D31AEEAED7006FA979 /* BlinkUp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BlinkUp.framework; sourceTree = "<group>"; };
-		C86E81D51AEEAED7006FA979 /* BlinkUp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BlinkUp.bundle; sourceTree = "<group>"; };
 		C8A708BA1AEFE4ED005E4334 /* BUBasicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUBasicController.swift; sourceTree = "<group>"; };
 		C8A708BB1AEFE4ED005E4334 /* BUConfigId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUConfigId.swift; sourceTree = "<group>"; };
 		C8A708BC1AEFE4ED005E4334 /* BUDevicePoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUDevicePoller.swift; sourceTree = "<group>"; };
@@ -43,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86E81D61AEEAED7006FA979 /* BlinkUp.framework in Frameworks */,
+				C8C073ED25B0E949007B114A /* BlinkUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				C8A708B91AEFE4ED005E4334 /* BlinkUpSwiftExtensions */,
-				C86E81D21AEEAED7006FA979 /* BlinkUp.embeddedframework */,
 				C86E81AF1AEEAE7D006FA979 /* ExampleAppSwift */,
 				C86E81AE1AEEAE7D006FA979 /* Products */,
 			);
@@ -89,24 +85,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C86E81D21AEEAED7006FA979 /* BlinkUp.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				C86E81D31AEEAED7006FA979 /* BlinkUp.framework */,
-				C86E81D41AEEAED7006FA979 /* Resources */,
-			);
-			name = BlinkUp.embeddedframework;
-			path = ../BlinkUp/BlinkUp.embeddedframework;
-			sourceTree = "<group>";
-		};
-		C86E81D41AEEAED7006FA979 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C86E81D51AEEAED7006FA979 /* BlinkUp.bundle */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		C8A708B91AEFE4ED005E4334 /* BlinkUpSwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +114,9 @@
 			dependencies = (
 			);
 			name = ExampleAppSwift;
+			packageProductDependencies = (
+				C8C073EC25B0E949007B114A /* BlinkUp */,
+			);
 			productName = ExampleSwift;
 			productReference = C86E81AD1AEEAE7D006FA979 /* ExampleAppSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +146,9 @@
 				Base,
 			);
 			mainGroup = C86E81A41AEEAE7D006FA979;
+			packageReferences = (
+				C8C073EB25B0E949007B114A /* XCRemoteSwiftPackageReference "BlinkUpSDK-iOS" */,
+			);
 			productRefGroup = C86E81AE1AEEAE7D006FA979 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,7 +166,6 @@
 				C86E81B81AEEAE7D006FA979 /* Main.storyboard in Resources */,
 				C86E81BD1AEEAE7D006FA979 /* LaunchScreen.xib in Resources */,
 				C86E81BA1AEEAE7D006FA979 /* Images.xcassets in Resources */,
-				C86E81D71AEEAED7006FA979 /* BlinkUp.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +310,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -339,13 +323,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../BlinkUp/BlinkUp.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ExampleAppSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.electricimp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ExampleAppSwift;
@@ -358,13 +342,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../BlinkUp/BlinkUp.embeddedframework",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ExampleAppSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.electricimp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ExampleAppSwift;
@@ -394,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8C073EB25B0E949007B114A /* XCRemoteSwiftPackageReference "BlinkUpSDK-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/electricimp/BlinkUpSDK-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8C073EC25B0E949007B114A /* BlinkUp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8C073EB25B0E949007B114A /* XCRemoteSwiftPackageReference "BlinkUpSDK-iOS" */;
+			productName = BlinkUp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C86E81A51AEEAE7D006FA979 /* Project object */;
 }
