@@ -16,7 +16,6 @@
 		2AC334C0175FD635004B1049 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC334BE175FD635004B1049 /* MainStoryboard.storyboard */; };
 		2AC334C7175FD635004B1049 /* EIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC334C6175FD635004B1049 /* EIViewController.m */; };
 		2AC334D0175FD86B004B1049 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC334CF175FD86B004B1049 /* AVFoundation.framework */; };
-		2AC334D2175FD87F004B1049 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC334D1175FD87F004B1049 /* OpenGLES.framework */; };
 		2AC334D4175FD887004B1049 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC334D3175FD887004B1049 /* QuartzCore.framework */; };
 		2AC334D6175FD88E004B1049 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC334D5175FD88E004B1049 /* Security.framework */; };
 		2AC334D8175FD893004B1049 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC334D7175FD893004B1049 /* SystemConfiguration.framework */; };
@@ -62,7 +61,6 @@
 				2AC334AD175FD635004B1049 /* Foundation.framework in Frameworks */,
 				2AC334AF175FD635004B1049 /* CoreGraphics.framework in Frameworks */,
 				2AC334D0175FD86B004B1049 /* AVFoundation.framework in Frameworks */,
-				2AC334D2175FD87F004B1049 /* OpenGLES.framework in Frameworks */,
 				2AC334D4175FD887004B1049 /* QuartzCore.framework in Frameworks */,
 				2AC334D6175FD88E004B1049 /* Security.framework in Frameworks */,
 				2AC334D8175FD893004B1049 /* SystemConfiguration.framework in Frameworks */,
@@ -179,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = EI;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1230;
 			};
 			buildConfigurationList = 2AC334A2175FD635004B1049 /* Build configuration list for PBXProject "ExampleCustomUI" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -348,7 +346,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleCustomUI/ExampleCustomUI-Prefix.pch";
@@ -367,7 +364,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleCustomUI/ExampleCustomUI-Prefix.pch";

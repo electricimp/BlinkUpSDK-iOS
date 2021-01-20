@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C812FEBE25B8AEC1000FBF7B /* BlinkUp in Frameworks */ = {isa = PBXBuildFile; productRef = C812FEBD25B8AEC1000FBF7B /* BlinkUp */; };
 		C86E81B31AEEAE7D006FA979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E81B21AEEAE7D006FA979 /* AppDelegate.swift */; };
 		C86E81B51AEEAE7D006FA979 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E81B41AEEAE7D006FA979 /* ViewController.swift */; };
 		C86E81B81AEEAE7D006FA979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86E81B61AEEAE7D006FA979 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		C8A708C11AEFE4ED005E4334 /* BUDevicePoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BC1AEFE4ED005E4334 /* BUDevicePoller.swift */; };
 		C8A708C21AEFE4ED005E4334 /* BUFlashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BD1AEFE4ED005E4334 /* BUFlashController.swift */; };
 		C8A708C31AEFE4ED005E4334 /* BUNetworkSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A708BE1AEFE4ED005E4334 /* BUNetworkSelectController.swift */; };
-		C8C073ED25B0E949007B114A /* BlinkUp in Frameworks */ = {isa = PBXBuildFile; productRef = C8C073EC25B0E949007B114A /* BlinkUp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,19 +40,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8C073ED25B0E949007B114A /* BlinkUp in Frameworks */,
+				C812FEBE25B8AEC1000FBF7B /* BlinkUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C812FEBC25B8AEC1000FBF7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C86E81A41AEEAE7D006FA979 = {
 			isa = PBXGroup;
 			children = (
 				C8A708B91AEFE4ED005E4334 /* BlinkUpSwiftExtensions */,
 				C86E81AF1AEEAE7D006FA979 /* ExampleAppSwift */,
 				C86E81AE1AEEAE7D006FA979 /* Products */,
+				C812FEBC25B8AEC1000FBF7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +103,7 @@
 				C8A708BE1AEFE4ED005E4334 /* BUNetworkSelectController.swift */,
 			);
 			name = BlinkUpSwiftExtensions;
-			path = ../BlinkUp/BlinkUpSwiftExtensions;
+			path = ../BlinkUpSwiftExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +123,7 @@
 			);
 			name = ExampleAppSwift;
 			packageProductDependencies = (
-				C8C073EC25B0E949007B114A /* BlinkUp */,
+				C812FEBD25B8AEC1000FBF7B /* BlinkUp */,
 			);
 			productName = ExampleSwift;
 			productReference = C86E81AD1AEEAE7D006FA979 /* ExampleAppSwift.app */;
@@ -256,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -307,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -325,7 +333,7 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ExampleAppSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +352,7 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ExampleAppSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +399,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C8C073EC25B0E949007B114A /* BlinkUp */ = {
+		C812FEBD25B8AEC1000FBF7B /* BlinkUp */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C8C073EB25B0E949007B114A /* XCRemoteSwiftPackageReference "BlinkUpSDK-iOS" */;
 			productName = BlinkUp;

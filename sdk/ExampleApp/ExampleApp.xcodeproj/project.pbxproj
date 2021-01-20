@@ -11,7 +11,6 @@
 		2A29E6C416C1DB3100933C12 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A29E6C316C1DB3100933C12 /* SystemConfiguration.framework */; };
 		2A4014A516C31F3E00310299 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4014A416C31F3E00310299 /* Security.framework */; };
 		2A4014A916C33E6600310299 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4014A816C33E6600310299 /* QuartzCore.framework */; };
-		2A4014AC16C33E7D00310299 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4014AB16C33E7D00310299 /* OpenGLES.framework */; };
 		2A431D3916C194200091B37B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A431D3816C194200091B37B /* UIKit.framework */; };
 		2A431D3B16C194200091B37B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A431D3A16C194200091B37B /* Foundation.framework */; };
 		2A431D3D16C194200091B37B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A431D3C16C194200091B37B /* CoreGraphics.framework */; };
@@ -65,7 +64,6 @@
 				2A29E6C416C1DB3100933C12 /* SystemConfiguration.framework in Frameworks */,
 				2A4014A516C31F3E00310299 /* Security.framework in Frameworks */,
 				2A4014A916C33E6600310299 /* QuartzCore.framework in Frameworks */,
-				2A4014AC16C33E7D00310299 /* OpenGLES.framework in Frameworks */,
 				2A141FCB16FB89CC00D33254 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
