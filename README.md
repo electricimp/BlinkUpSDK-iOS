@@ -53,4 +53,4 @@ git submodule update --remote
 
 ---
 
-The BlinkUp SDK is copyright &copy; 2020, Twilio, Inc.
+The BlinkUp SDK is copyright &copy; 2022, Twilio, Inc.
