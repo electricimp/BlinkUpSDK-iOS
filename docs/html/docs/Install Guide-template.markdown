@@ -1,6 +1,12 @@
-To use the BlinkUp SDK, copy `BlinkUp.embeddedframework` to your project directory, drag the framework into Xcode’s organizer window, and add the `-ObjC` linker flag.
+## Swift Package Manager Installation
 
-## Objective-C Framework Installation
+1. Open your project in Xcode.
+1. Go to **File > Swift Packages > Add Package Dependency...** and add this repo as a dependency.
+1. Apply your preferred dependency rules.
+1. Ensure that your targets `Build Settings` has `-ObjC` set for `Other Linker Flags`
+
+
+## Objective-C Framework Installation - Deprecated
 
 1. Unzip `BlinkUpSDK.zip`.
 2. Drag `BlinkUp.embeddedframework` from the `BlinkUpSDK/BlinkUp` directory to the project organizer in Xcode (Select `Copy items into destination group's folder`).
@@ -15,7 +21,7 @@ To use the BlinkUp SDK, copy `BlinkUp.embeddedframework` to your project directo
 	- Security.Framework
 	- SystemConfiguration.framework
  
-## Swift Framework Installation
+## Swift Framework Installation - Deprecated
 
 1. Unzip `BlinkUpSDK.zip`.
 2. Drag `BlinkUp.embeddedframework` from the `BlinkUpSDK/BlinkUp` directory to the project organizer in Xcode (Select `Copy items into destination group's folder`).

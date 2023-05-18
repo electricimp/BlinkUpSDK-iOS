@@ -63,20 +63,21 @@
 
 <p>The following code snippet shows how you can present a standard network selection UI:</p>
 
-<pre><code>// 1. Create a new instance of a BUNetworkSelectController
+<p>```
+// 1. Create a new instance of a BUNetworkSelectController</p>
 
-BUNetworkSelectController *networkSelect = [[BUNetworkSelectController alloc] init];
+<p>BUNetworkSelectController *networkSelect = [[BUNetworkSelectController alloc] init];</p>
 
-// 2. Present the interface to the user
+<p>// 2. Present the interface to the user</p>
 
-[networkSelect presentInterfaceAnimated:NO completionHandler:^(BUNetworkConfig *networkConfig, BOOL userDidCancel) {
+<p>[networkSelect presentInterfaceAnimated:NO completionHandler:^(BUNetworkConfig *networkConfig, BOOL userDidCancel) {
   // 3. At this point your interface is back in control
   // 4. If userDidCancel is true, no network or action was selected
   // 5. If the user selected a network or action, the networkConfig object will
   //    have the result and can be pass into a flash controller, or the properties
   //    can be read directly after checking type (BUWifiConfig, BUWPSConfig, BUEthernetConfig, or BUNetworkConfig)
 }];
-</code></pre>
+```</p>
 
 <p id="networkCustom">&nbsp;</p>
 
@@ -93,22 +94,23 @@ BUNetworkSelectController *networkSelect = [[BUNetworkSelectController alloc] in
 
 <p>The following code snippet shows how you can access network data:</p>
 
-<pre><code>// 1. Retrieve a list of the iPhone's current WiFi network and all saved networks
-//    All objects are of type BUWifiConfig and the first object is the current network
+<p>```
+// 1. Retrieve a list of the iPhone&rsquo;s current WiFi network and all saved networks
+//    All objects are of type BUWifiConfig and the first object is the current network</p>
 
-NSArray *wifiConfigs = [BUNetworkManager allWifiConfigs];
+<p>NSArray *wifiConfigs = [BUNetworkManager allWifiConfigs];</p>
 
-// 2. Present your own interface to the user
-//    some awesome interface you develop
+<p>// 2. Present your own interface to the user
+//    some awesome interface you develop</p>
 
-// 3. After your interface is complete create a BUNetworkConfig (or sublass) to
-//    use for flashing the device
+<p>// 3. After your interface is complete create a BUNetworkConfig (or sublass) to
+//    use for flashing the device</p>
 
-BUNetworkConfig *clearConfig = [BUNetworkConfig clearNetworkConfig];
-BUWifiConfig *wifiConfig = [[BUWifiConfig alloc] initWithSSID:@"networkname" password:@"pass123"];
-BUWPSConfig *wpsConfig = [[BUWPSConfig alloc] initWithWPSPin:@"0430"];
-BUEthernetConfig *ethernetConfig = [[BUEthernetConfig alloc] init];
-</code></pre>
+<p>BUNetworkConfig <em>clearConfig = [BUNetworkConfig clearNetworkConfig];
+BUWifiConfig </em>wifiConfig = [[BUWifiConfig alloc] initWithSSID:@&ldquo;networkname&rdquo; password:@&ldquo;pass123&rdquo;];
+BUWPSConfig <em>wpsConfig = [[BUWPSConfig alloc] initWithWPSPin:@&ldquo;0430&rdquo;];
+BUEthernetConfig </em>ethernetConfig = [[BUEthernetConfig alloc] init];
+```</p>
 
 <hr />
 
@@ -127,15 +129,16 @@ BUEthernetConfig *ethernetConfig = [[BUEthernetConfig alloc] init];
 
 <p>The following code snippet shows how you to generate the configuration ID:</p>
 
-<pre><code>// 1. Create a new BUConfigId using your API key.
+<p>```
+// 1. Create a new BUConfigId using your API key.
 //    Upon creation it will attempt to connect to the Eletric Imp Cloud and
-//    retrieve a new configuration ID (stored in a BUConfigId object)
+//    retrieve a new configuration ID (stored in a BUConfigId object)</p>
 
-BUConfigId *configId = [[BUConfigId alloc] initWithApiKey:[self getAPIKey] completionHandler:^(BUConfigId *configId, NSError *error) {
+<p>BUConfigId <em>configId = [[BUConfigId alloc] initWithApiKey:[self getAPIKey] completionHandler:^(BUConfigId </em>configId, NSError *error) {
   // 2. Be sure to check for an error and inform the user
   // 3. Use the now active configId to perform a flash or external configuration
 }];
-</code></pre>
+```</p>
 
 <hr />
 
@@ -148,19 +151,20 @@ BUConfigId *configId = [[BUConfigId alloc] initWithApiKey:[self getAPIKey] compl
 
 <p>The following code snippet shows how to present the flash screen:</p>
 
-<pre><code>// 1. Create a new instance of a flash controller
+<p>```
+// 1. Create a new instance of a flash controller</p>
 
-BUFlashController *flashController = [[BUFlashController alloc] init];
+<p>BUFlashController *flashController = [[BUFlashController alloc] init];</p>
 
-// 2. Start the flashing process using the configId object (see 'Configuration ID', above)
-//    Upon completion the resignActive block will be called
+<p>// 2. Start the flashing process using the configId object (see &lsquo;Configuration ID&rsquo;, above)
+//    Upon completion the resignActive block will be called</p>
 
-[flashController presentFlashWithNetworkConfig:wifiConfig configId:configId animated:YES resignActive:^(BOOL willRespond, BUDevicePoller *devicePoller, NSError *error) {
+<p>[flashController presentFlashWithNetworkConfig:wifiConfig configId:configId animated:YES resignActive:^(BOOL willRespond, BUDevicePoller <em>devicePoller, NSError </em>error) {
   // 3. Be sure to check for an error and inform the user
   // 4. If willRespond is true, a devicePoller will be created to retrieve deviceInfo
   // 5. Use the devicePoller to retrieve information about the device
 }];
-</code></pre>
+```</p>
 
 <hr />
 
@@ -173,22 +177,23 @@ BUFlashController *flashController = [[BUFlashController alloc] init];
 
 <p>The following code snippet shows how to poll the impCloud:</p>
 
-<pre><code>// 1. The devicePoller is normally created by the BUFlashController (but it can be
-//    created manually if using an external configuration method)
+<p>```
+// 1. The devicePoller is normally created by the BUFlashController (but it can be
+//    created manually if using an external configuration method)</p>
 
-BUDevicePoller *devicePoller = devicePollerFromFlashControllerResignActiveBlock;
+<p>BUDevicePoller *devicePoller = devicePollerFromFlashControllerResignActiveBlock;</p>
 
-[devicePoller startPollingWithCompletionHandler:^(BUDeviceInfo *deviceInfo, BOOL timedOut, NSError *error) {
+<p>[devicePoller startPollingWithCompletionHandler:^(BUDeviceInfo <em>deviceInfo, BOOL timedOut, NSError </em>error) {
   // 3. Be sure to check for an error and inform the user
   // 4. If timedOut is true the device did not connect within the pollTimeout period
   // 5. If deviceInfo is not nil, it will contain information of the device that was configured
 }];
-</code></pre>
+```</p>
 
 					<footer>
 						<div class="footer-copyright">
 							
-							<p class="copyright">Copyright &copy; 2020 Twilio. All rights reserved. Updated: 2020-07-07</p>
+							<p class="copyright">Copyright &copy; 2023 Twilio. All rights reserved. Updated: 2023-05-18</p>
 							
 							
 							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

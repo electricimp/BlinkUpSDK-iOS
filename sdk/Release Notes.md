@@ -1,3 +1,8 @@
+### iOS SDK v20.1.0 ###
+
+- Change: Improved reliability when running on iOS 15+
+- **IMPORTANT** Change: Minimum iOS support has changed to iOS 11+
+
 ### iOS SDK v20.0.1 ###
 
 - Change: Electric Imp is now part of Twilio.
