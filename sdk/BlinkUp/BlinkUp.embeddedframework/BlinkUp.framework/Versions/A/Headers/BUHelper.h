@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by Brett Park on 2016-10-13.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,7 +17,7 @@
 /**
  @brief During BlinkUp, the rotation of the application and the status bar may become
  out of sync with the device orientation. In order to fix the orientation and status
- bar, this method can be called in an attempt to correct both. It works by quickly 
+ bar, this method can be called in an attempt to correct both. It works by quickly
  presenting an empty view controller with a clear background on the view controller
  passed in. It is then immediately dismissed which causes the presenting view controller
  to be redrawn in the correct orientation. It is important that this may cause the
@@ -62,7 +62,7 @@
 
 /**
  @brief Unique identifier for this user / device
- 
+
  Defaults to device's `identifierForVendor`
 
  @return String with a unique identifier

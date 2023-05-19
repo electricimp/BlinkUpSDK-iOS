@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by Brett Park on 2014-12-10.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -101,7 +101,7 @@ typedef void (^FlashResignActiveBlock)(BOOL willRespond, BUDevicePoller *_Nullab
 
 /*!
  *  If set to true, the status bar will be hidden after the Flash completes
- *  This method is now deprecated and does not affect the status bar (as of 19.6.0). 
+ *  This method is now deprecated and does not affect the status bar (as of 19.6.0).
  *  Please use prefersStatusBarHidden on your view controller.
  */
 @property (nonatomic, assign) BOOL hideStatusBarAfterFlash;

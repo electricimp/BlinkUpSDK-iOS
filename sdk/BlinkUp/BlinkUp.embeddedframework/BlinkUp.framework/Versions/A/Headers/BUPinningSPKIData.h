@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by Brett Park on 2018-01-28.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,14 +11,14 @@
 
 /**
  Information about the SPKI data for pinning
- 
+
  Some providers use a Hex format while others use a Base64 encoded string. An initialization method exists for both
  */
 @interface BUPinningSPKIData : NSObject
 
 /**
  @brief Create the SPKI pin data from a Hex string
- 
+
  @param pin The pin in Hex format
  @param pubKeyAlg An array of BUPublicKeyAlgorithm values
  @return The SPKI pin data
@@ -27,7 +27,7 @@
 
 /**
  @brief Create the SPKI pin data from a Base64 string
- 
+
  @param pin The pin in Base64 format
  @param pubKeyAlg An array of BUPublicKeyAlgorithm values
  @return The SPKI pin data

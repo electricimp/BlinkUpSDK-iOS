@@ -19,7 +19,7 @@ static double BlinkUpVersionNumber = 20.0001;
 /*!
  *  @brief SDK version number as string
  */
-static NSString *const BlinkUpVersionString = @"20.0.1";
+static NSString *const BlinkUpVersionString = @"20.1.0";
 
 #import <BlinkUp/BUSDK.h>
 #import <BlinkUp/BUBasicController.h>

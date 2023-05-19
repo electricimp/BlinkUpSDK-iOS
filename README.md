@@ -38,4 +38,4 @@ The BlinkUp SDK repo is considered solely for consumption by a customer’s proj
 
 ---
 
-The BlinkUp SDK is copyright &copy; 2020, Twilio, Inc.
+The BlinkUp SDK is copyright &copy; 2023, Twilio, Inc.

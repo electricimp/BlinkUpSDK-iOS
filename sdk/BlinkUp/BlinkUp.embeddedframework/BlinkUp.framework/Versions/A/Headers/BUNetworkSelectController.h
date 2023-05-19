@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by Brett Park on 2014-12-09.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

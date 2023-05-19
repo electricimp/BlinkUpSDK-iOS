@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by Brett Park on 2018-01-28.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +12,7 @@
 
 /**
  @brief The pinning description describes valid SPKI data for a hostname and its subdomains.
- 
+
  Ensure to configure the pins after initialization.
  */
 NS_ASSUME_NONNULL_BEGIN
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  @brief A pinning description for a host
 
  After initialization the SSL pins should be manually set
- 
+
  @param hostname Hostname of the server certificate
  @return Pinning Description without pins
  */

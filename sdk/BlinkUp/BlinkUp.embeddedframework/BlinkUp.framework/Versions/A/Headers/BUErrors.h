@@ -3,7 +3,7 @@
 //  BlinkUp
 //
 //  Created by BrettPark on 2014-08-12.
-//  Copyright © 2020 Twilio, Inc. All rights reserved.
+//  Copyright © 2023 Twilio, Inc. All rights reserved.
 //
 
 #pragma once
@@ -77,7 +77,7 @@ typedef NS_ENUM (NSInteger, BlinkUpError){
 
   /// The Feature was not enabled
   BlinkUpErrorFeatureNotEnabled= 301,
-  
+
   /// The Feature Object was of an invalid type
   BlinkUpErrorFeatureObjectInvalid= 302,
 };
