@@ -1,6 +1,6 @@
 /******************************************************************************
  * - Created 2013/11/27 by Brett Park
- * - Copyright Twilio 2020. All rights reserved.
+ * - Copyright Twilio, Inc. 2023. All rights reserved.
  *
  */
 
@@ -252,17 +252,17 @@
   } else if (optionalDns2.length > 0 && ![BUNetworkManager isValidIpAddress:optionalDns2]) {
     errorField = @"DNS 2";
   }
-  
+
   if (errorField) {
     NSString *errorMessage = [NSString stringWithFormat:@"The %@ field is not a valid IP address", errorField];
     [self showError:errorMessage forTitle:@"Static Addressing Issue"];
     return nil;
   }
-  
+
   // Create the Static Addressing object
   // This initializer is failable and may return nil if the strings are not valid IP Addresses.
   BUStaticAddressing *staticAddressing = [[BUStaticAddressing alloc]initWithIp:ip netmask:netmask gateway:gateway dns1:dns1 dns2:optionalDns2];
-  
+
   // If an object was created return it
   if (staticAddressing) {
     return staticAddressing;
@@ -376,13 +376,13 @@
 
 -(void) showRetrieveTokenAlert {
   UIAlertController * alertController = [UIAlertController alertControllerWithTitle:nil message:@"Retrieving Token" preferredStyle:UIAlertControllerStyleAlert];
-  
+
   alertController.view.tintColor = [UIColor blackColor];
   UIActivityIndicatorView * indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(10, 5, 50, 50)];
   indicatorView.hidesWhenStopped = YES;
   indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
   [indicatorView startAnimating];
-  
+
   [alertController.view addSubview:indicatorView];
   [self presentViewController:alertController animated:YES completion:nil];
 }
