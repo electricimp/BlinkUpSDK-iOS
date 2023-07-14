@@ -1,6 +1,6 @@
 /******************************************************************************
  * - Created 2013/11/27 by Brett Park
- * - Copyright Twilio, Inc. 2023. All rights reserved.
+ * - Copyright KORE Wireless 2023. All rights reserved.
  *
  */
 

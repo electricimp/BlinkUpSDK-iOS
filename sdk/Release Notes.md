@@ -1,5 +1,11 @@
+### iOS SDK v20.1.1 ###
+
+- Change: Electric Imp is now part of KORE Wireless.
+- Change: Pre-BlinkUp countdown flash now has a light theme to reduce screen auto-brightness changes.
+  
 ### iOS SDK v20.1.0 ###
 
+- Feature: Support for TriLevel in iOS (using the property `useTriLevel`)
 - Change: Improved reliability when running on iOS 15+
 - **IMPORTANT** Change: Minimum iOS support has changed to iOS 11+
 

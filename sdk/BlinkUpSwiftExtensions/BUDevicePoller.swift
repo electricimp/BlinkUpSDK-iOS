@@ -3,17 +3,17 @@
 //  BlinkUpSwiftSDK
 //
 //  Created by Brett Park on 2015-01-20.
-//  Copyright © 2023 Twilio. All rights reserved.
+//  Copyright © 2023 KORE Wireless. All rights reserved.
 //
 
 import Foundation
 import BlinkUp
 
 extension BUDevicePoller {
-
+  
   /**
   Swift specific implementation for polling to see if a device connected
-
+  
   :param: responseHandler Closure that is called on success or failure of a BlinkUp attempt
   */
   public func startPollingWithHandler(_ responseHandler: @escaping (_ response:PollerResponse) -> ()) {
@@ -30,10 +30,10 @@ extension BUDevicePoller {
       responseHandler(response)
     }
   }
-
+  
   /**
   Swift specific enumeration of possible poller responses
-
+  
   - Responded: The device connected. Contains information about the device.
   - TimedOut:  The poller timed out while waiting to hear from the device
   - Error:     Reason the imp did not connect (if known)
