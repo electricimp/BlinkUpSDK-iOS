@@ -35,7 +35,7 @@
   [super viewDidLoad];
 
   //Dump verion number to console
-  NSLog(@"Using version %@ : %f of the SDK", BlinkUpVersionString, BlinkUpVersionNumber);
+  NSLog(@"Using version %s : %f of the SDK", BlinkUpVersionString, BlinkUpVersionNumber);
   
   //When the application enters the foreground, make sure the app is up to date (IE: Current Wifi SSID)
   [[NSNotificationCenter defaultCenter]addObserver:self

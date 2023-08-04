@@ -3,7 +3,7 @@
 //  ExampleSwift
 //
 //  Created by Brett Park on 2015-04-27.
-//  Copyright © 2020 Twilio Inc. All rights reserved.
+//  Copyright © 2023 KORE Wireless All rights reserved.
 //
 
 import UIKit
