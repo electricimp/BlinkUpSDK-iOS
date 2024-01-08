@@ -1,3 +1,8 @@
+### iOS SDK v20.2.0 ###
+
+- Change: TriLevel is now enabled by default. To revert back to prior behaviour set `useTriLevel` to `false`
+- Bugfix: BlinkUp does not crash when using UIScenes
+
 ### iOS SDK v20.1.1 ###
 
 - Change: Electric Imp is now part of KORE Wireless.

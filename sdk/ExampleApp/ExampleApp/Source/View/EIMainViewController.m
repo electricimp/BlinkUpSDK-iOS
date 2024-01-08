@@ -1,6 +1,6 @@
 /******************************************************************************
  * - Created 2015/01/27 by Brett Park
- * - Copyright KORE Wireless 2023. All rights reserved.
+ * - Copyright © 2024 KORE Wireless, Inc. All rights reserved.
  *
  */
 

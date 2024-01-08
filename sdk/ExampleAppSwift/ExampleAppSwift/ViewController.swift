@@ -3,7 +3,7 @@
 //  ExampleAppSwift
 //
 //  Created by BrettPark on 2014-09-08.
-//  Copyright © 2023 KORE Wireless. All rights reserved.
+//  Copyright © 2024 KORE Wireless. All rights reserved.
 //
 
 import UIKit

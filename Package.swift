@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BlinkUp",
-            url: "https://github.com/electricimp/BlinkUpSDK-iOS/releases/download/20.1.1/blinkup_sdk_ios_v20.1.1.xcframework.zip",
-            checksum: "7487b4c0dda1ce5b6092995f8a8e09631220d7e119bddc50f31eeb2197a085e4"),
+            url: "https://github.com/electricimp/BlinkUpSDK-iOS/releases/download/20.2.0/blinkup_sdk_ios_v20.2.0.xcframework.zip",
+            checksum: "65f4fded8ddef3026bd8fe4a8fb79a02c53b6521de9b43dd6b245ce491df26c4"),
     ]
 )
 
