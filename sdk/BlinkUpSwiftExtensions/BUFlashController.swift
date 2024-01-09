@@ -3,7 +3,7 @@
 //  BlinkUpSwiftSDK
 //
 //  Created by Brett Park on 2015-04-27.
-//  Copyright © 2023 KORE Wireless Inc. All rights reserved.
+//  Copyright © 2024 KORE Wireless Inc. All rights reserved.
 //
 
 import AVFoundation
@@ -15,7 +15,7 @@ import BlinkUp
 extension BUFlashController {
   /**
   Swift enumeration of flash results
-  
+
   - CompletedWithoutPoller: The flash completed but a poller was not created.
   This is often due to non-configuration flash types such as clearing
   - CompletedWithPoller:    The flash completed and a poller has been created
@@ -26,10 +26,10 @@ extension BUFlashController {
     case completedWithPoller(BUDevicePoller)
     case error(NSError)
   }
-  
+
   /**
   Swift specific method for performing a BlinkUp
-  
+
   :param: networkConfig he WifiConfig, WpsConfig, or ClearConfig that is to
     be performed.
   :param: configId      The single use configId for this flashing session. This
@@ -50,7 +50,7 @@ extension BUFlashController {
       default:
         response = FlashResponse.completedWithPoller(poller!)
       }
-      
+
       resignActive(response)
     }
   }
